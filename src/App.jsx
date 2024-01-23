@@ -31,8 +31,9 @@ function App() {
           <Route path="register" element={ <Register /> }/>
           <Route path="lost-password" element={ <LostPassword /> }/>
           <Route path="lost-password/:token" element={ <NewPassword /> }/>
-          <Route path="confirm/:token" index element={ <ConfirmPage /> }/>
+          <Route path="confirm/:id" element={ <ConfirmPage /> }/>
         </Route>
+        
         
         <Route path="/admin/*" element={<PrivateZone/>}>
           <Route index element={<AdministrarPacientes/>}/>
