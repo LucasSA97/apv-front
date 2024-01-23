@@ -1,0 +1,14 @@
+{
+    "routes": [
+      { "src": "/", "dest": "/" },
+      { "src": "/register", "dest": "/register" },
+      { "src": "/lost-password", "dest": "/lost-password" },
+      { "src": "/lost-password/:token", "dest": "/lost-password/:token" },
+      { "src": "/confirm/:id", "dest": "/confirm/:id" },
+      { "src": "/admin", "dest": "/admin" },
+      { "src": "/perfil", "dest": "/perfil" },
+      { "src": "/cambiar-password", "dest": "/cambiar-password" },
+ 
+      { "src": "/[^.]+", "dest": "/", "status": 200 }
+    ]
+  }
