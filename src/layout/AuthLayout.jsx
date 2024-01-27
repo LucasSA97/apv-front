@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom"
 import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+
 const AuthLayout = () => {
 
   useEffect(() => {
     Swal.fire({
       icon: "info",
       title: "¡Bienvenido a la App para Administrar tus Pacientes!",
-      text: "Correo de prueba: correo@correo.com , Password de prueba: password"
-     
+      html:"<p>Prueba gratis con este usuario:</p> <b>correo@correo.com , password</b>",
+      
     });
     // const MySwal = withReactContent(Swal);
 
